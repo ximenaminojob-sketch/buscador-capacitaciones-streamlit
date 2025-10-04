@@ -24,8 +24,9 @@ def parse_fecha(v):
     if isinstance(v, str):
         dt = pd.to_datetime(v, dayfirst=True, errors="coerce"); return dt.date() if pd.notna(dt) else None
     return None
-
-XLSX_PATH  = "COPIA EXCEL.xlsx"
+    
+BASE_DIR   = Path(__file__).resolve().parent
+XLSX_PATH  = "Nómina de Capacitación - QR - REV. 02"
 SHEET_NAME = "TECHINT"
 
 ROW_HEADER = 5
