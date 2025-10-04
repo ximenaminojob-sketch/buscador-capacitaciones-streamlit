@@ -1,14 +1,18 @@
 # Buscador de Capacitaciones (Streamlit)
 
-App para consultar **solo las capacitaciones realizadas** (con **fecha**) por **DNI**.
-
-## Estructura esperada del Excel
+### Estructura esperada
 - Hoja: `TECHINT`
-- DNI en **columna C** desde fila **7** (`C7:C`).
-- Encabezados de temas en **fila 6**, desde **G6** hacia la derecha.
-- Matriz de valores desde **G7** (fechas/estados).
+- DNI: Columna C (desde fila 7)
+- Encabezados de temas: Fila 6, desde G6 hacia la derecha
+- Matriz de valores: desde G7 (fechas o textos)
 
-## Ejecutar localmente
-```bash
+### Probar localmente
+```
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+### Publicar en Streamlit Cloud
+1. Subí este proyecto a GitHub (incluyendo `COPIA EXCEL.xlsx`).
+2. En https://streamlit.io/cloud → New app → elegí el repo y `app.py`.
+3. Listo: tendrás una URL pública.
